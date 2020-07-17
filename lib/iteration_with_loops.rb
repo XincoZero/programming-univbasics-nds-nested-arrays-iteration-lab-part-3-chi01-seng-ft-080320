@@ -1,8 +1,19 @@
 def join_nested_strings(src)
-  string_array = []
+  strings_array = []
   row_index = 0 
   while row_index < src.length do 
     element_index = 0 
-    while element_index < src[row_index]. is_a? String 
-    string_array << src[row_index][element_]
+    
+    while element_index < src[row_index].length do 
+      if src[row_index][element_index].is_a? String 
+        strings_array << src[row_index][element_index]
+  end 
+  element_index += 1 
+end 
+row_index += 1 
 end
+
+new_string = strings_array.join(" ")
+new_string
+
+end 
